@@ -17,6 +17,24 @@
 
 #include <application.h>
 
+/*
+ * You can use conditional define checks if needed:
+ *
+ *    #if defined(SPARK_CORE)	// only defined for .ino files, not .cpp
+ *
+ * and
+ *
+ *    #if defined(SPARK)
+ *      #if defined(PLATFORM_ID)
+ *        #if (PLATFORM_ID == 0)
+ *    	  //Core
+ *        #elif (PLATFORM_ID == 6)
+ *             //Photon
+ *        #endif
+ *      #endif  //PLATFORM_ID
+ *    #endif  //SPARK
+ */
+
 #define PI              3.1415926535897932384626433832795
 #define HALF_PI         1.5707963267948966192313216916398
 #define TWO_PI          6.283185307179586476925286766559
